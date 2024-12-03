@@ -1,0 +1,9 @@
+terraform.tfvars
+*terraform
+.terraform/
+.venv/
+env/
+.terraform.lock.hcl
+file.py
+maim.md
+terraform.tfstate.backup
