@@ -9,8 +9,8 @@ terraform {
   required_version = ">= 1.2.0"
 
   backend "s3" {
-    bucket = "keneji"
-    key    = "my-back"
+    bucket = "fire-grace"
+    key    = "my back"
     region = "eu-north-1"
   }
 
