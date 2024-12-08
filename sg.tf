@@ -10,10 +10,12 @@ resource "aws_security_group" "web_sg2" {
   }
 
   ingress {
-    from_port   = 22
-    to_port     = 22
+    from_port   = 3306 # MySQL port
+    to_port     = 3306
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+
+    //cidr_blocks = [aws_instance.app_server2.vpc_security_group_ids[0]]
   }
 
   ingress {

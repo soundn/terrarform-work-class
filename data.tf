@@ -7,4 +7,10 @@ data "aws_subnet" "default" {
     name   = "availability-zone"
     values = ["eu-north-1a"]
   }
+  /*
+  filter {
+    name   = "availabilityZone"
+    values = ["eu-north-1"]
+  }
+  */
 }
